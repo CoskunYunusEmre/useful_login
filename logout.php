@@ -9,7 +9,7 @@
  */
 
  session_start();
- if(session_unregister('girisID') == true && session_unregister('kullaniciAdi') == true){
+ if(isset($_SESSION['girisID']) == true && isset($_SESSION['kullaniciAdi']) == true){
  	session_destroy();
 		header('Location: index.php');
  }

@@ -31,6 +31,7 @@
 	} // End of else
 } // End of if
 else {
+    kullanici_bilgi_alanini_goster();
     anasayfayi_goster();
 } // End of else
 ?>

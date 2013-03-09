@@ -25,7 +25,7 @@
 		return false; // Kullanici Adi 3 karakterden az ise yanlis olarak geri doner
 	}
 	
-	$sonuc = ereg("^[A-Za-z0-9_\-]+$", $kullaniciAdi); // Kullanici A'den Z'ye (ascii), a'dan z'ye(ascii)  ve 0-9 karakterlerin kullanimina izin verilir.
+	$sonuc = preg_match("/^[A-Za-z0-9_\-]+$/", $kullaniciAdi); // Kullanici A'den Z'ye (ascii), a'dan z'ye(ascii)  ve 0-9 karakterlerin kullanimina izin verilir.
 	
 	  if($sonuc)
 	  {
@@ -54,7 +54,7 @@
 	{
 		return false; // Parola 6 karakterden kucukse yanlis olarak doner
 	}
-	$sonuc = ereg("^[A-Za-z0-9_\-]+$", $parola);
+	$sonuc = preg_match("/^[A-Za-z0-9_\-]+$/", $parola);
 	
 	if($sonuc)
 	{
