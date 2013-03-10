@@ -16,9 +16,6 @@
     //Oturum bilgilerini alalim	
     $kullaniciAdi = $_SESSION['kullaniciAdi'];
     $kid = $_SESSION['girisID'];
-	
-    // Kullanici bilgi alanini gosterelim.	
-    // print_r($_SESSION);
 
     echo "
         <div id='kullaniciBilgiAlani'>
@@ -27,7 +24,7 @@
                         <td>
                                 $kullaniciAdi Hoş Geldiniz
                         </td>				
-                        <td>
+                        <td align='right'>
                                 <a href='./logout.php'>Çıkış</a>
                         </td>
                         </tr>

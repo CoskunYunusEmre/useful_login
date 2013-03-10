@@ -21,8 +21,9 @@
 			kullanici_bilgi_alanini_goster(); 
 			anasayfayi_goster();
 		} // End of if
-		else {
-                    echo "<script language=javascript>alert('Bilgiler Eksik/Hatalı')</script>";
+		else {                    
+                    $errorMessage = $_SESSION['errorMessage']; 
+                    echo "<script language=javascript>alert('$errorMessage')</script>";
                     giris_formunu_goster(); 
 		} // End of else
 	} // End of if
